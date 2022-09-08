@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "simple-baby-games",
+    "slug": "simple-baby-games",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
