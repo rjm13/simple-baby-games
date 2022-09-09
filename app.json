@@ -3,8 +3,29 @@
     "name": "simple-baby-games",
     "slug": "simple-baby-games",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/babygameslogo.png",
+    "splash": {
+      "image": "./assets/babygamessplash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/babygameslogo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.msm.simplebabygames"
+    },
+    "web": {
+      "favicon": "./assets/babygameslogo.png"
+    }
   }
 }
