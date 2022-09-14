@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View, Dimensions, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableWithoutFeedback, TouchableOpacity } from 'react-native';
 import ConfettiCannon from 'react-native-confetti-cannon';
 
 export default function App() {
@@ -108,7 +108,14 @@ export default function App() {
       <View>
         <View style={{flexDirection: 'row', }} >
           <TouchableWithoutFeedback onPress={lock === true ? UnLock : NewNum1} onLongPress={Reset}>
-            <View style={{backgroundColor: colorArr[num1], width: SCREEN_WIDTH*0.25, height: SCREEN_HEIGHT*0.5}}/>
+            <View style={{backgroundColor: colorArr[num1], width: SCREEN_WIDTH*0.25, height: SCREEN_HEIGHT*0.5}}>
+              <TouchableOpacity onPress={() => Linking.openURL('https://www.freeprivacypolicy.com/live/aa93df17-c886-494d-93d1-dfbf93d5e34e')}>
+                <Text style={{padding: 40}}>
+                  Policy
+                </Text>
+              </TouchableOpacity>
+              
+            </View>
           </TouchableWithoutFeedback>
           <TouchableWithoutFeedback onPress={lock === true ? UnLock : NewNum2} onLongPress={Reset}>
             <View style={{backgroundColor: colorArr[num2], width: SCREEN_WIDTH*0.25, height: SCREEN_HEIGHT*0.5}}/>

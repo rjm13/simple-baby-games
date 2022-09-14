@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/babygameslogo.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.msm.simplebabygames"
+      "package": "com.martianmedia.blipprod"
     },
     "web": {
       "favicon": "./assets/babygameslogo.png"
